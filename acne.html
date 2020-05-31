@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TamilMedi.com</title>
+	<link rel="stylesheet" type="text/css" href="page2.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h1 class="ask">ACNE</h1>
+<br><p>In case of using voice,please click stop before exiting.</p>
+<div id="SpeechSynthesis">
+    <div>
+        <button id=play></button>
+        <button id=pause></button>
+        <button id=stop></button>
+    	<select id="voices">
+        </select>
+        <button class="open-button" onclick="openForm()"><strong>Open Gloassary</strong></button></li>
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <label for="email"><b>Turmeric</b></label>
+            <h5>हल्दी (hindi) மஞ்சள் (tamil) పసుపు (telugu) മഞ്ഞൾ (malayalam)</h5>
+
+            <label for="psw"><b>Potato</b></label>
+            <h5>आलू (hindi) உருளைக்கிழங்கு (tamil) బంగాళాదుంప (telugu) ഉരുളക്കിഴങ്ങ് (malayalam)</h5>
+
+            <label for="psw"><b>Papaya</b></label>
+            <h5>पपीता (hindi) பப்பாளி (tamil) బొప్పాయి (telugu) പപ്പായ (malayalam)</h5>
+
+            <label for="psw"><b>Lemon</b></label>
+            <h5>नींबू (hindi) எலுமிச்சை (tamil) నిమ్మకాయ (telugu) ചെറുനാരങ്ങ (malayalam)</h5>
+
+            <label for="psw"><b>Neem Leaves</b></label>
+            <h5>नीम के पत्ते (hindi) வேப்ப இலைகள் (tamil) వేప ఆకులు (telugu) വേപ്പ് ഇലകൾ (malayalam)</h5>
+
+            <button type="button" class="cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+    </div>    
+</div>
+<div id="description">
+<h3>Turmeric</h3>
+<p>Make a paste with turmeric powder and water and apply on the skin. Once dried, rinse off and pat dry. You can replace water with honey for dry skin.</p>
+<h3>Potato</h3>
+<p>Slice thin disks from a potato and massage your face gently with it.</p>
+<h3>Papaya</h3>
+<p>Wash your face, pat dry and apply papaya paste on your face. Leave the mask on for 20-40 minutes and rinse off with warm water. Repeat daily.</p> 
+<h3>Lemon</h3>
+<p>Apply lemon juice directly to the pimple overnight. It not only cures pimple but protects your skin too.</p>
+<h3>Neem leaves</h3>
+<p>Apply neem paste on the affected area, leave it dry, rinse with water and pat dry. Make neem leaf paste by boiling and crushing 10 leaves.</p>
+</div>
+
+<ul>
+	<li class="prev" onclick="location.href='index.html';"><span></span></li>
+</ul>
+
+</body>
+</html>

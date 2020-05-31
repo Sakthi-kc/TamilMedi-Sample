@@ -1,0 +1,234 @@
+*{
+  margin-top: 35px;
+  padding: 0;
+   font-family: 'Courgette', cursive;
+  box-sizing: border-box;
+  text-shadow: 5px;
+}
+body{
+  position: relative;
+  margin-top: 100px;
+  background: url(leaf.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Courgette', cursive;
+  text-shadow: 5px;
+}
+#SpeechSynthesis{
+  margin-left: 400px;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    height: 48px;
+    outline: none;
+    padding: 5px;
+    width: 48px;
+}
+#voices{
+  font-size: inherit;
+  margin-left: 40px;
+  width: 600px;
+  height: 42px;
+  border: 0.2em solid #2fda8d;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  padding-left: 15px;
+  outline: 0;
+}
+#play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+#stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+}
+
+.ask{
+  margin-left: 600px;
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  color: #030303;
+  animation: typing 2s steps(16),blink 0.5s infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.2px solid #154360;
+  width: 14.5ch;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 16ch;
+  }
+}
+@keyframes blink{
+  from{
+    border-color: transparent;
+  }
+  to{
+    border-color: #154360;
+  }
+}
+h3{
+  margin-left: 400px;
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  color: #030303;
+}
+p{
+  width: 500px;
+  margin-left: 500px;
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+
+/*button{
+  font-size: 20px;
+  size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 600px;
+  color: black;
+  background: url(hit.jpg); 
+  border-color: #196F3D;
+}
+*/
+ul{
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li{
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  background: #004600; 
+  margin: 0 10px;
+  color: white;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+ul li:hover{
+  background: #008000;
+}
+
+ul li span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #fff;
+  transition: .5s;
+}
+
+ul li.prev span{
+  top: 5%;
+  left: 45%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+}
+
+ul li.prev:hover span{
+  left: 30%;
+}
+
+ul li.prev span:before{
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 4px;
+  background: #fff;
+  transform-origin: left;
+  transform: rotate(45deg) translate(-2px,-1px) scaleX(0);
+  transition: .5s;
+}
+
+ul li.prev:hover span:before{
+  transform: rotate(45deg) translate(-2px,-1px) scaleX(1); 
+}
+.open-button {
+  background-color: #005500;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.8;
+  position: relative;
+  top: 23px;
+  left: 250px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: -20px;
+  width: 1000px;
+  height: 600px;
+  right: 35px;
+  border: 0px solid green;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 1000px;
+  padding: 10px;
+  background-color: #B4BCDA;
+}
+
+.form-container h5{
+  width: 100%;
+  color: black;
+  padding: 15px;
+  margin: 5px 0 25px 0;
+  font-size: 15px;
+  border: none;
+  background-color: #3792cb;
+}
+.form-container label{
+  color: black;
+  font-size: 17px;
+}
+
+.form-container h5:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .cancel {
+  margin: 0px 330px;
+  width: 280px;
+  background-color: #005500;
+  opacity: 1;
+  font-size: 15px;
+  color: white;
+}
+
+.form-container .cancel:hover, .open-button:hover {
+  opacity: 1.2;
+}
